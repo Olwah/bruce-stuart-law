@@ -1,0 +1,55 @@
+// Section break arrow animation
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30rem);
+  }
+
+  80% {
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+}
+// Navigation options animation
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+
+  80% {
+    transform: translateX(-7rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+}
+
+// About section image animation
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+
+  80% {
+    transform: translateX(7rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+}

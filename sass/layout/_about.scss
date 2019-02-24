@@ -1,0 +1,89 @@
+.about {
+  margin-top: 8rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 4rem;
+  }
+
+  &__background {
+    background-color: $color-primary-light;
+    padding: 10rem 0;
+    clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 85%);
+
+    @media only screen and (max-width: $bp-medium) {
+      clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%);
+    }
+  }
+
+  &__small {
+    position: relative;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+
+    animation: moveInLeft 1.5s 0.75s;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+    }
+  }
+
+  &__image {
+    height: 100%;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin: auto;
+    transition: all .5s;
+
+    animation: moveInLeft 1.5s 0.75s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  /*
+  &__title {
+    position: absolute;
+    top: 12rem;
+    left: -7rem;
+    transform: rotate(71deg);
+  }
+  */
+
+  &__large {
+    padding-right: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-right: 0;
+    }
+  }
+
+  &__list {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    list-style-image: url(../img/bullet-tick.gif);
+  }
+
+  &__list-item {
+    width: 49%;
+    float: left;
+  }
+}
