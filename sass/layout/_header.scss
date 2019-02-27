@@ -12,8 +12,16 @@
     height: 85vh;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-larger) {
+    background-position-y: -24rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
     height: 80vh;
+    background-position-y: -16rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
     background-position-y: -8rem;
   }
 }

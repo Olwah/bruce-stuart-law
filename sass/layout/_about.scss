@@ -1,6 +1,10 @@
 .about {
   margin-top: 8rem;
 
+  @media only screen and (min-width: $bp-largest) {
+    margin-top: 13rem;
+  }
+
   @media only screen and (max-width: $bp-medium) {
     margin-top: 4rem;
   }
@@ -9,6 +13,10 @@
     background-color: $color-primary-light;
     padding: 10rem 0;
     clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 85%);
+
+    @media only screen and (max-width: $bp-larger) {
+      clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%);
+    }
 
     @media only screen and (max-width: $bp-medium) {
       clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%);

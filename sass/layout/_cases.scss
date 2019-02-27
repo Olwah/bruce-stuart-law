@@ -11,6 +11,14 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-larger) {
+      padding: 6rem 3rem 10rem 3rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 9rem 3rem 13rem 3rem;
+    }
+
     @media only screen and (max-width: $bp-medium) {
       clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%);
     }
@@ -30,6 +38,15 @@
     left: 4rem;
     top: 4rem;
     transform: rotate(4deg);
+
+    @media only screen and (min-width: $bp-largest) {
+      transform: rotate(3deg);
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      top: 4rem;
+      transform: rotate(7deg);
+    }
 
     @media only screen and (max-width: $bp-medium) {
       transform: rotate(5deg);
@@ -86,6 +103,10 @@
 
       order: -1;
 
+      @media only screen and (max-width: $bp-large) {
+        width: 80rem;
+      }
+
       @media only screen and (max-width: $bp-medium) {
         width: 65rem;
       }
@@ -105,9 +126,13 @@
 
       order: 0;
 
+      @media only screen and (max-width: $bp-large) {
+        width: 80rem;
+        margin-top: 0;
+      }
+
       @media only screen and (max-width: $bp-medium) {
         width: 65rem;
-        margin-top: 0;
       }
 
       @media only screen and (max-width: $bp-smaller) {
@@ -119,6 +144,10 @@
       width: 100%;
 
       order: 2;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 80rem;
+      }
 
       @media only screen and (max-width: $bp-medium) {
         width: 65rem;

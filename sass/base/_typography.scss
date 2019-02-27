@@ -36,14 +36,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 2rem;
 
-  @media only screen and (max-width: $bp-medium) {
-    letter-spacing: 10px;
-  }
-
   &--cases {
     margin-left: 4rem;
 
-    @media only screen and (max-width: $bp-smaller) {
+    @media only screen and (max-width: $bp-large) {
+      letter-spacing: 10px;
+      text-align: center;
       margin-left: 0;
       width: 100%;
     }
