@@ -99,6 +99,10 @@
     height: 8rem;
     margin: 1rem;
 
+    @media only screen and (max-width: $bp-smallest) {
+      display: none;
+    }
+
     & img {
       width: auto;
       height: 8rem;
@@ -181,11 +185,12 @@
     &:visited {
       text-decoration: none;
       font-size: 1.5rem;
-      color: $color-black;
+      color: $color-white;
       padding: 1rem;
 
       @media only screen and (min-width: $bp-largest) {
         font-size: 2.5rem;
+        color: $color-black;
       }
 
       @media only screen and (max-width: $bp-medium) {
@@ -205,13 +210,14 @@
       font-size: 1.5rem;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: $color-black;
+      color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
       transition: .2s all ease-out;
 
       @media only screen and (min-width: $bp-largest) {
         font-size: 2.5rem;
+        color: $color-black;
       }
 
       @media only screen and (max-width: $bp-medium) {

@@ -57,9 +57,9 @@ body {
   color: #212121; }
 
 .heading-primary {
+  font-size: 2rem;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 6rem;
   backface-visibility: hidden; }
 
 .heading-secondary {
@@ -177,6 +177,10 @@ body {
   float: left;
   padding-left: 6rem;
   margin-top: -5rem; }
+  @media only screen and (max-width: 30em) {
+    .section-break__left {
+      float: none;
+      margin-top: 0; } }
 
 .section-break--animated {
   animation: moveInTop 3s 3.2s; }
@@ -185,26 +189,24 @@ body {
   width: 6rem;
   transform: translateY(0);
   transition: 0.5s ease-in; }
+  @media only screen and (max-width: 30em) {
+    .section-break img {
+      width: 4rem; } }
   .section-break img:hover {
     transform: translateY(3rem);
     transition: 0.5s ease-in 0.2s; }
 
 .about {
-  margin-top: 8rem;
-  /*
-  &__title {
-    position: absolute;
-    top: 12rem;
-    left: -7rem;
-    transform: rotate(71deg);
-  }
-  */ }
+  margin-top: 8rem; }
   @media only screen and (min-width: 112.5em) {
     .about {
       margin-top: 13rem; } }
   @media only screen and (max-width: 56.25em) {
     .about {
       margin-top: 4rem; } }
+  @media only screen and (max-width: 30em) {
+    .about {
+      margin-top: 0; } }
   .about__background {
     background-color: #B2EBF2;
     padding: 10rem 0;
@@ -218,6 +220,9 @@ body {
     @media only screen and (max-width: 45.3em) {
       .about__background {
         clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%); } }
+    @media only screen and (max-width: 30em) {
+      .about__background {
+        clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%); } }
   .about__small {
     position: relative;
     text-align: center;
@@ -256,13 +261,23 @@ body {
     font-size: 1.5rem;
     padding-left: 2rem;
     list-style-image: url(../img/bullet-tick.gif); }
+    @media only screen and (max-width: 30em) {
+      .about__list {
+        padding-left: 12rem; } }
   .about__list-item {
     width: 49%;
     float: left; }
+    @media only screen and (max-width: 30em) {
+      .about__list-item {
+        width: 100%;
+        float: none; } }
 
 .cases {
   margin: 5rem 0; }
-  .cases__container {
+  @media only screen and (max-width: 30em) {
+    .cases {
+      margin: 0; } }
+  .cases__background {
     position: relative;
     background-color: #B2EBF2;
     padding: 6rem 3rem 8rem 3rem;
@@ -271,21 +286,21 @@ body {
     flex-wrap: wrap;
     justify-content: center; }
     @media only screen and (max-width: 75em) {
-      .cases__container {
+      .cases__background {
         padding: 6rem 3rem 10rem 3rem; } }
     @media only screen and (max-width: 68.75em) {
-      .cases__container {
+      .cases__background {
         padding: 9rem 3rem 13rem 3rem; } }
     @media only screen and (max-width: 56.25em) {
-      .cases__container {
+      .cases__background {
         clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%); } }
     @media only screen and (max-width: 45.3em) {
-      .cases__container {
+      .cases__background {
         clip-path: polygon(0 0%, 100% 2.3%, 100% 100%, 0 97%); } }
     @media only screen and (max-width: 35.6em) {
-      .cases__container {
+      .cases__background {
         clip-path: polygon(0 0%, 100% 3.5%, 100% 100%, 0 97%);
-        padding: 6rem 1rem 8rem 1rem; } }
+        padding: 4rem 1rem 8rem 1rem; } }
   .cases__title {
     position: absolute;
     left: 4rem;
@@ -310,8 +325,8 @@ body {
         transform: rotate(8deg); } }
     @media only screen and (max-width: 30em) {
       .cases__title {
-        font-size: 2.5rem;
-        transform: rotate(9deg); } }
+        font-size: 2rem;
+        transform: rotate(10.5deg); } }
   .cases__category {
     background-color: #f5f5f5;
     border-radius: 2rem;
@@ -344,12 +359,12 @@ body {
       @media only screen and (max-width: 56.25em) {
         .cases__category--money-laundering {
           width: 65rem; } }
-      @media only screen and (max-width: 35.6em) {
-        .cases__category--money-laundering {
-          height: 55rem; } }
       @media only screen and (max-width: 45.3em) {
         .cases__category--money-laundering {
           margin-top: 10rem; } }
+      @media only screen and (max-width: 35.6em) {
+        .cases__category--money-laundering {
+          height: 55rem; } }
     .cases__category--rcf {
       width: 49%;
       margin-top: 8rem;
@@ -364,6 +379,9 @@ body {
       @media only screen and (max-width: 35.6em) {
         .cases__category--rcf {
           height: 36rem; } }
+      @media only screen and (max-width: 30em) {
+        .cases__category--rcf {
+          height: 44rem; } }
     .cases__category--inquiries {
       width: 100%;
       order: 2; }
@@ -400,6 +418,11 @@ body {
       border-radius: 1.3rem;
       box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.3);
       opacity: 1.0; }
+    @media only screen and (max-width: 30em) {
+      .cases__list-item:nth-of-type(2n) {
+        background-color: #777;
+        color: #fff;
+        border-radius: .5rem; } }
   .cases__list-item:before {
     content: "";
     display: inline-block;
@@ -418,9 +441,15 @@ body {
         mask-image: url(../img/SVG/quill.svg);
         mask-size: cover;
         background-image: none; } }
+    @media only screen and (max-width: 30em) {
+      .cases__list-item:before {
+        display: none; } }
 
 .contact {
   margin-top: 8rem; }
+  @media only screen and (max-width: 30em) {
+    .contact {
+      margin-top: 0; } }
   .contact__background {
     background-color: #B2EBF2;
     padding: 13rem 2rem;
@@ -437,6 +466,10 @@ body {
     @media only screen and (max-width: 35.6em) {
       .contact__background {
         padding-bottom: 16rem; } }
+    @media only screen and (max-width: 30em) {
+      .contact__background {
+        padding-top: 12rem;
+        clip-path: polygon(0 8%, 100% 0, 100% 88%, 0 93%); } }
   .contact__content {
     text-align: center;
     position: relative;
@@ -473,9 +506,10 @@ body {
         transform: rotate(-10deg); } }
     @media only screen and (max-width: 30em) {
       .contact__title {
-        font-size: 3.5rem;
-        left: 9rem;
-        transform: rotate(-12deg); } }
+        font-size: 3rem;
+        top: -6rem;
+        left: 8rem;
+        transform: rotate(-13deg); } }
   .contact__options {
     background-color: #f5f5f5;
     padding: 2rem 1rem;
@@ -706,16 +740,29 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
       height: 85vh; } }
+  @media only screen and (min-width: 112.5em) {
+    .header {
+      background-position-y: -53rem; } }
   @media only screen and (max-width: 75em) {
     .header {
-      background-position-y: -24rem; } }
+      background-position-y: 0; } }
   @media only screen and (max-width: 68.75em) {
     .header {
-      height: 80vh;
-      background-position-y: -16rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .header {
-      background-position-y: -8rem; } }
+      height: 80vh; } }
+  .header__title {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem; }
+    @media only screen and (max-width: 30em) {
+      .header__title {
+        display: block;
+        font-size: 1.5rem; } }
 
 .navigation__checkbox {
   display: none; }
@@ -791,6 +838,9 @@ body {
   display: inline-block;
   height: 8rem;
   margin: 1rem; }
+  @media only screen and (max-width: 30em) {
+    .navigation__logo {
+      display: none; } }
   .navigation__logo img {
     width: auto;
     height: 8rem;
@@ -850,11 +900,12 @@ body {
 .navigation__btn:link, .navigation__btn:visited {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #000;
+  color: #fff;
   padding: 1rem; }
   @media only screen and (min-width: 112.5em) {
     .navigation__btn:link, .navigation__btn:visited {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem;
+      color: #000; } }
   @media only screen and (max-width: 56.25em) {
     .navigation__btn:link, .navigation__btn:visited {
       color: #fff; } }
@@ -867,13 +918,14 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   transition: .2s all ease-out; }
   @media only screen and (min-width: 112.5em) {
     .navigation__link:link, .navigation__link:visited {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem;
+      color: #000; } }
   @media only screen and (max-width: 56.25em) {
     .navigation__link:link, .navigation__link:visited {
       color: #fff; } }

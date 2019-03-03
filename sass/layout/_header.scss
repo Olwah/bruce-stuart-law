@@ -12,16 +12,29 @@
     height: 85vh;
   }
 
+  @media only screen and (min-width: $bp-largest) {
+    background-position-y: -53rem;
+  }
+
   @media only screen and (max-width: $bp-larger) {
-    background-position-y: -24rem;
+    background-position-y: 0;
   }
 
   @media only screen and (max-width: $bp-large) {
     height: 80vh;
-    background-position-y: -16rem;
   }
 
-  @media only screen and (max-width: $bp-medium) {
-    background-position-y: -8rem;
+  &__title {
+    display: none;
+    @include absCenter;
+    color: $color-white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      display: block;
+      font-size: 1.5rem;
+    }
   }
 }

@@ -9,6 +9,10 @@
     margin-top: 4rem;
   }
 
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 0;
+  }
+
   &__background {
     background-color: $color-primary-light;
     padding: 10rem 0;
@@ -24,6 +28,10 @@
 
     @media only screen and (max-width: $bp-small) {
       clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%);
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%);
     }
   }
 
@@ -67,15 +75,6 @@
     }
   }
 
-  /*
-  &__title {
-    position: absolute;
-    top: 12rem;
-    left: -7rem;
-    transform: rotate(71deg);
-  }
-  */
-
   &__large {
     padding-right: 2rem;
 
@@ -88,10 +87,19 @@
     font-size: 1.5rem;
     padding-left: 2rem;
     list-style-image: url(../img/bullet-tick.gif);
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding-left: 12rem;
+    }
   }
 
   &__list-item {
     width: 49%;
     float: left;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+      float: none;
+    }
   }
 }
