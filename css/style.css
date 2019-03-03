@@ -213,15 +213,19 @@ body {
     clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 85%); }
     @media only screen and (max-width: 75em) {
       .about__background {
+        -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%);
         clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%); } }
     @media only screen and (max-width: 56.25em) {
       .about__background {
+        -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%);
         clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%); } }
     @media only screen and (max-width: 45.3em) {
       .about__background {
+        -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%);
         clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%); } }
     @media only screen and (max-width: 30em) {
       .about__background {
+        -webkit-clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%);
         clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%); } }
   .about__small {
     position: relative;
@@ -281,6 +285,7 @@ body {
     position: relative;
     background-color: #B2EBF2;
     padding: 6rem 3rem 8rem 3rem;
+    -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
     clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
     display: flex;
     flex-wrap: wrap;
@@ -293,12 +298,15 @@ body {
         padding: 9rem 3rem 13rem 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .cases__background {
+        -webkit-clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%);
         clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%); } }
     @media only screen and (max-width: 45.3em) {
       .cases__background {
+        -webkit-clip-path: polygon(0 0%, 100% 2.3%, 100% 100%, 0 97%);
         clip-path: polygon(0 0%, 100% 2.3%, 100% 100%, 0 97%); } }
     @media only screen and (max-width: 35.6em) {
       .cases__background {
+        -webkit-clip-path: polygon(0 0%, 100% 3.5%, 100% 100%, 0 97%);
         clip-path: polygon(0 0%, 100% 3.5%, 100% 100%, 0 97%);
         padding: 4rem 1rem 8rem 1rem; } }
   .cases__title {
@@ -453,6 +461,7 @@ body {
   .contact__background {
     background-color: #B2EBF2;
     padding: 13rem 2rem;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); }
     @media only screen and (max-width: 75em) {
       .contact__background {
@@ -462,6 +471,7 @@ body {
         padding: 18rem 2rem 15rem 2rem; } }
     @media only screen and (max-width: 56.25em) {
       .contact__background {
+        -webkit-clip-path: polygon(0 8%, 100% 0, 100% 88%, 0 97%);
         clip-path: polygon(0 8%, 100% 0, 100% 88%, 0 97%); } }
     @media only screen and (max-width: 35.6em) {
       .contact__background {
@@ -469,6 +479,7 @@ body {
     @media only screen and (max-width: 30em) {
       .contact__background {
         padding-top: 12rem;
+        -webkit-clip-path: polygon(0 8%, 100% 0, 100% 88%, 0 93%);
         clip-path: polygon(0 8%, 100% 0, 100% 88%, 0 93%); } }
   .contact__content {
     text-align: center;

@@ -19,18 +19,22 @@
     clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 85%);
 
     @media only screen and (max-width: $bp-larger) {
+      -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%);
       clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%);
     }
 
     @media only screen and (max-width: $bp-medium) {
+      -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%);
       clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%);
     }
 
     @media only screen and (max-width: $bp-small) {
+      -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%);
       clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%);
     }
 
     @media only screen and (max-width: $bp-smallest) {
+      -webkit-clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%);
       clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%);
     }
   }

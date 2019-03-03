@@ -9,6 +9,7 @@
     position: relative;
     background-color: $color-primary-light;
     padding: 6rem 3rem 8rem 3rem;
+    -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
     clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
 
     display: flex;
@@ -24,14 +25,17 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
+      -webkit-clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%);
       clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%);
     }
 
     @media only screen and (max-width: $bp-small) {
+      -webkit-clip-path: polygon(0 0%, 100% 2.3%, 100% 100%, 0 97%);
       clip-path: polygon(0 0%, 100% 2.3%, 100% 100%, 0 97%);
     }
 
     @media only screen and (max-width: $bp-smaller) {
+      -webkit-clip-path: polygon(0 0%, 100% 3.5%, 100% 100%, 0 97%);
       clip-path: polygon(0 0%, 100% 3.5%, 100% 100%, 0 97%);
       padding: 4rem 1rem 8rem 1rem;
     }
