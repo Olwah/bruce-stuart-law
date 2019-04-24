@@ -759,7 +759,22 @@ body {
       background-position-y: 0; } }
   @media only screen and (max-width: 68.75em) {
     .header {
-      height: 80vh; } }
+      height: 80vh;
+      -webkit-clip-path: none;
+      clip-path: none;
+      background: linear-gradient(173deg, transparent 80%, #f5f5f5 50%) no-repeat, url(../img/hero.jpg) 0 -27rem/cover no-repeat; } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background: linear-gradient(173deg, transparent 80%, #f5f5f5 50%) no-repeat, url(../img/hero.jpg) 0 -23rem/cover no-repeat; } }
+  @media only screen and (max-width: 45.3em) {
+    .header {
+      background: linear-gradient(173deg, transparent 80%, #f5f5f5 50%) no-repeat, url(../img/hero.jpg) 0 -12rem/cover no-repeat; } }
+  @media only screen and (max-width: 35.6em) {
+    .header {
+      background: linear-gradient(173deg, transparent 80%, #f5f5f5 50%) no-repeat, url(../img/hero.jpg) 0 -5rem/cover no-repeat; } }
+  @media only screen and (max-width: 30em) {
+    .header {
+      background: linear-gradient(173deg, transparent 80%, #f5f5f5 50%) no-repeat, url(../img/hero.jpg) 0 -3rem/cover no-repeat; } }
   .header__title {
     display: none;
     position: absolute;
