@@ -15,7 +15,13 @@
   },
   "author": "Oliver Stuart",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "minimist": ">=1.2.3",
+    "lodash": ">=4.17.12",
+    "lodash.mergewith": ">=4.6.2",
+    "fstream": ">=1.0.12",
+    "tar": ">=2.2.2"
+  },
   "devDependencies": {
     "node-sass": "^4.11.0"
   }
