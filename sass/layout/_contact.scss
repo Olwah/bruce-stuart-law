@@ -87,7 +87,7 @@
   }
 
   &__options {
-    background-color: $color-grey;
+    background-color: $color-primary;
     padding: 2rem 1rem;
     border-radius: 1rem;
     box-shadow: 3px 4px 1px rgba(0,0,0,.3);
@@ -109,8 +109,8 @@
     }
 
     &:hover {
-      color: $color-white;
-      background-color: $color-primary-dark;
+      color: $color-grey;
+      background-color: $color-primary-2;
       transform: translate(3px, -2px);
     }
 
@@ -213,7 +213,11 @@
   &__links:link,
   &__links:visited {
     text-decoration: none;
-    color: $color-accent;
+    color: $color-black;
+
+    &:hover {
+      color: $color-grey;
+    }
   }
 
   @media only screen and (max-width: $bp-smaller) {

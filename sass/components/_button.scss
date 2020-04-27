@@ -14,8 +14,8 @@
   &:hover {
     transform: translate(1px, 2px);
     box-shadow: .7rem .6rem 1rem rgba($color-black, .2);
-    background-color: $color-accent;
-    color: $color-white;
+    background-color: $color-primary-2;
+    color: $color-grey;
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -31,7 +31,7 @@
   }
 
   &--primary {
-    border: 3px solid $color-accent;
+    border: 3px solid $color-primary-2;
     border-radius: 3rem;
     color: $color-black;
     padding: 1rem;
@@ -46,8 +46,8 @@
 
     &:hover {
       font-weight: bold;
-      border: 3px solid $color-accent;
-      color: $color-white;
+      border: 3px solid $color-primary-2;
+      color: $color-grey;
       text-shadow: 2px 1px 1px rgba(0,0,0,.2);
     }
 
