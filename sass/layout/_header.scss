@@ -9,7 +9,7 @@
   background-size: cover;
   background-position-x: left;
   background-position-y: -35rem;
-  background-color: $color-grey;
+  background-color: $color-grey-light;
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -30,31 +30,36 @@
     -webkit-clip-path: none;
     clip-path: none;
     background:
-      linear-gradient(173deg, transparent 80%, $color-grey 50%) no-repeat,
-      url(../img/hero.jpg) (0 -27rem)/cover no-repeat;
+    linear-gradient(173deg, transparent 80%, $color-grey-light 50%) no-repeat,
+    url(../img/hero.jpg) (0 -27rem)/cover no-repeat;
+  //  background-image: linear-gradient(
+  //    to left bottom,
+  //    rgba($color-primary-light, 0.3),
+  //    rgba($color-primary-light, 0.3)),
+  //  url(../img/hero.jpg);
   }
 
   @media only screen and (max-width: $bp-medium) {
     background:
-    linear-gradient(173deg, transparent 80%, $color-grey 50%) no-repeat,
+    linear-gradient(173deg, transparent 80%, $color-grey-light 50%) no-repeat,
     url(../img/hero.jpg) (0 -23rem)/cover no-repeat;
   }
 
   @media only screen and (max-width: $bp-small) {
     background:
-    linear-gradient(173deg, transparent 80%, $color-grey 50%) no-repeat,
+    linear-gradient(173deg, transparent 80%, $color-grey-light 50%) no-repeat,
     url(../img/hero.jpg) (0 -12rem)/cover no-repeat;
   }
 
   @media only screen and (max-width: $bp-smaller) {
     background:
-    linear-gradient(173deg, transparent 80%, $color-grey 50%) no-repeat,
+    linear-gradient(173deg, transparent 80%, $color-grey-light 50%) no-repeat,
     url(../img/hero.jpg) (0 -5rem)/cover no-repeat;
   }
 
   @media only screen and (max-width: $bp-smallest) {
     background:
-    linear-gradient(173deg, transparent 80%, $color-grey 50%) no-repeat,
+    linear-gradient(173deg, transparent 80%, $color-grey-light 50%) no-repeat,
     url(../img/hero.jpg) (0 -3rem)/cover no-repeat;
   }
 

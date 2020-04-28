@@ -38,6 +38,7 @@ body {
 
   &--cases {
     margin-left: 4rem;
+    color: $color-grey-dark;
 
     @media only screen and (max-width: $bp-large) {
       letter-spacing: 10px;

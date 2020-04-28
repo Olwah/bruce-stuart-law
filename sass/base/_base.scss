@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth;
-  background-color: $color-grey;
+  background-color: $color-grey-light;
 }
 
 body {
@@ -23,5 +23,5 @@ body {
 }
 
 .container {
-  background-color: $color-grey;
+  //background-color: $color-grey-light;
 }

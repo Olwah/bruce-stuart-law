@@ -77,24 +77,34 @@
   }
 
   &__category {
+    height: 34rem;
     background-color: $color-primary;
     border-radius: 2rem;
     box-shadow: 3px 4px 1px rgba(0,0,0,.3);
     padding: 1.5rem;
     margin-right: 1rem;
     margin-bottom: 4rem;
+    overflow: scroll;
 
     @media only screen and (max-width: $bp-smaller) {
-      overflow: scroll;
+      //overflow: scroll;
       margin-right: 0;
     }
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     &--fraud {
-      width: 80%;
+      width: 100%;
 
       order: 1;
       display: flex;
       flex-wrap: wrap;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 80rem;
+      }
 
       @media only screen and (max-width: $bp-medium) {
         width: 65rem;
@@ -104,6 +114,7 @@
         height: 55rem;
       }
     }
+
 
     &--money-laundering {
       width: 49%;
@@ -154,7 +165,7 @@
 
     &--inquiries {
       width: 100%;
-
+      height: auto;
       order: 2;
 
       @media only screen and (max-width: $bp-large) {
@@ -189,6 +200,7 @@
 
   &__list-item {
     font-size: 1.5rem;
+    color: $color-grey-light;
     padding: 1rem;
     opacity: 1.0;
     transition: opacity .4s ease-in-out;
@@ -201,7 +213,7 @@
 
     &:hover {
       background-color: $color-primary-2;
-      color: $color-black;
+      color: $color-grey-light;
       border-radius: 1.3rem;
       box-shadow: 2px 3px 1px rgba(0,0,0,.3);
       opacity: 1.0;
@@ -231,7 +243,7 @@
 
     // Newer browsers - masks
     @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-      background-color: $color-grey;
+      background-color: $color-grey-dark;
       -webkit-mask-image: url(../img/SVG/quill.svg);
       -webkit-mask-size: cover;
       mask-image: url(../img/SVG/quill.svg);

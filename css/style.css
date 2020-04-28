@@ -47,9 +47,6 @@ body {
     body {
       padding: 0; } }
 
-.container {
-  background-color: #e2e2e2; }
-
 body {
   font-family: 'Arimo', sans-serif;
   font-weight: 400;
@@ -81,7 +78,8 @@ body {
   text-transform: uppercase;
   margin-bottom: 2rem; }
   .heading-tertiary--cases {
-    margin-left: 4rem; }
+    margin-left: 4rem;
+    color: #9b9b9b; }
     @media only screen and (max-width: 68.75em) {
       .heading-tertiary--cases {
         letter-spacing: 10px;
@@ -136,7 +134,7 @@ body {
 .btn:hover {
   transform: translate(1px, 2px);
   box-shadow: 0.7rem 0.6rem 1rem rgba(0, 0, 0, 0.2);
-  background-color: #FFBE6F;
+  background-color: #615192;
   color: #e2e2e2; }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
@@ -148,7 +146,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--primary {
-  border: 3px solid #FFBE6F;
+  border: 3px solid #615192;
   border-radius: 3rem;
   color: #000;
   padding: 1rem;
@@ -156,15 +154,15 @@ body {
   @media only screen and (max-width: 56.25em) {
     .btn--primary {
       padding: 0.5rem;
-      background-color: #E1891D;
+      background-color: #261758;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); } }
   .btn--primary:hover {
     font-weight: bold;
-    border: 3px solid #FFBE6F;
+    border: 3px solid #615192;
     color: #e2e2e2;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.2); }
   .btn--primary::after {
-    background-color: #F0A549; }
+    background-color: #403075; }
 
 .section-break__right {
   float: right;
@@ -209,7 +207,7 @@ body {
     .about {
       margin-top: 0; } }
   .about__background {
-    background-color: #FFD29A;
+    background-color: #887CAF;
     padding: 10rem 0;
     clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 85%); }
     @media only screen and (max-width: 75em) {
@@ -284,7 +282,7 @@ body {
       margin: 0; } }
   .cases__background {
     position: relative;
-    background-color: #FFD29A;
+    background-color: #887CAF;
     padding: 6rem 3rem 8rem 3rem;
     -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
     clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
@@ -337,21 +335,27 @@ body {
         font-size: 2rem;
         transform: rotate(10.5deg); } }
   .cases__category {
-    background-color: #F0A549;
+    height: 34rem;
+    background-color: #403075;
     border-radius: 2rem;
     box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.3);
     padding: 1.5rem;
     margin-right: 1rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    overflow: scroll; }
     @media only screen and (max-width: 35.6em) {
       .cases__category {
-        overflow: scroll;
         margin-right: 0; } }
+    .cases__category::-webkit-scrollbar {
+      display: none; }
     .cases__category--fraud {
-      width: 80%;
+      width: 100%;
       order: 1;
       display: flex;
       flex-wrap: wrap; }
+      @media only screen and (max-width: 68.75em) {
+        .cases__category--fraud {
+          width: 80rem; } }
       @media only screen and (max-width: 56.25em) {
         .cases__category--fraud {
           width: 65rem; } }
@@ -393,6 +397,7 @@ body {
           height: 44rem; } }
     .cases__category--inquiries {
       width: 100%;
+      height: auto;
       order: 2; }
       @media only screen and (max-width: 68.75em) {
         .cases__category--inquiries {
@@ -414,6 +419,7 @@ body {
           height: auto; } }
   .cases__list-item {
     font-size: 1.5rem;
+    color: #e2e2e2;
     padding: 1rem;
     opacity: 1.0;
     transition: opacity .4s ease-in-out;
@@ -422,8 +428,8 @@ body {
       .cases__list-item {
         text-align: justify; } }
     .cases__list-item:hover {
-      background-color: #FFBE6F;
-      color: #000;
+      background-color: #615192;
+      color: #e2e2e2;
       border-radius: 1.3rem;
       box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.3);
       opacity: 1.0; }
@@ -444,7 +450,7 @@ body {
     background-size: cover; }
     @supports (-webkit-mask-image: url()) or (mask-image: url()) {
       .cases__list-item:before {
-        background-color: #e2e2e2;
+        background-color: #9b9b9b;
         -webkit-mask-image: url(../img/SVG/quill.svg);
         -webkit-mask-size: cover;
         mask-image: url(../img/SVG/quill.svg);
@@ -460,7 +466,7 @@ body {
     .contact {
       margin-top: 0; } }
   .contact__background {
-    background-color: #FFD29A;
+    background-color: #887CAF;
     padding: 13rem 2rem;
     -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); }
@@ -523,7 +529,7 @@ body {
         left: 8rem;
         transform: rotate(-13deg); } }
   .contact__options {
-    background-color: #F0A549;
+    background-color: #403075;
     padding: 2rem 1rem;
     border-radius: 1rem;
     box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.3);
@@ -542,7 +548,7 @@ body {
         padding-left: 1rem; } }
     .contact__options:hover {
       color: #e2e2e2;
-      background-color: #FFBE6F;
+      background-color: #615192;
       transform: translate(3px, -2px); }
     .contact__options--left {
       margin-top: 3.6rem; }
@@ -563,7 +569,7 @@ body {
     width: 6rem;
     height: auto;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #b7b7b7;
     border-radius: 25%; }
     @media only screen and (max-width: 35.6em) {
       .contact__image {
@@ -617,7 +623,7 @@ body {
   display: inline-block;
   margin-top: 8rem; }
   .expertise__background {
-    background-color: #F0A549;
+    background-color: #403075;
     padding: 8rem 0 7rem 0;
     clip-path: polygon(0 0%, 100% 11%, 100% 100%, 0 89%); }
   .expertise__left {
@@ -666,7 +672,7 @@ body {
       .footer__content {
         font-size: 1.3rem; } }
     .footer__content h2 {
-      border-bottom: 2px solid #F0A549; }
+      border-bottom: 2px solid #403075; }
   .footer__navigation {
     font-size: 1.5rem;
     /* & ul li {
@@ -745,7 +751,7 @@ body {
 .header {
   height: 85vh;
   position: relative;
-  background-image: linear-gradient(to left bottom, rgba(255, 210, 154, 0.3), rgba(255, 210, 154, 0.3)), url(../img/hero.jpg);
+  background-image: linear-gradient(to left bottom, rgba(136, 124, 175, 0.3), rgba(136, 124, 175, 0.3)), url(../img/hero.jpg);
   background-size: cover;
   background-position-x: left;
   background-position-y: -35rem;
@@ -899,7 +905,7 @@ body {
       align-items: center;
       margin-left: auto; } }
   .navigation__list--mobile {
-    background-color: #FFBE6F;
+    background-color: #615192;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
     opacity: 0;
