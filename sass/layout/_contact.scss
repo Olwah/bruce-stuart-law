@@ -154,6 +154,7 @@
   &__text {
     font-size: 2rem;
     font-weight: 400;
+    color: $color-grey;
 
     @media only screen and (max-width: $bp-larger) {
       font-size: 1.6rem;
@@ -213,7 +214,7 @@
   &__links:link,
   &__links:visited {
     text-decoration: none;
-    color: $color-black;
+    color: $color-grey;
 
     &:hover {
       color: $color-grey-light;

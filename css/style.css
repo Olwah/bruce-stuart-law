@@ -576,7 +576,8 @@ body {
         margin-bottom: 2rem; } }
   .contact__text {
     font-size: 2rem;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #b7b7b7; }
     @media only screen and (max-width: 75em) {
       .contact__text {
         font-size: 1.6rem; } }
@@ -611,7 +612,7 @@ body {
           margin-left: 0; } }
   .contact__links, .contact__links:link, .contact__links:visited {
     text-decoration: none;
-    color: #000; }
+    color: #b7b7b7; }
     .contact__links:hover, .contact__links:link:hover, .contact__links:visited:hover {
       color: #e2e2e2; }
   @media only screen and (max-width: 35.6em) {
@@ -799,6 +800,8 @@ body {
       .header__title {
         display: block;
         font-size: 1.5rem; } }
+    .header__title--additional-info {
+      display: block; }
 
 .navigation__checkbox {
   display: none; }
@@ -980,3 +983,47 @@ body {
   color: #000;
   text-decoration: none;
   padding: 1rem 7rem 1rem 0; }
+
+.additional-info {
+  margin-top: 8rem; }
+  .additional-info__background {
+    height: auto;
+    background-color: #887CAF;
+    padding: 10rem 0;
+    clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 85%); }
+    @media only screen and (max-width: 75em) {
+      .additional-info__background {
+        -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%);
+        clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%); } }
+    @media only screen and (max-width: 56.25em) {
+      .additional-info__background {
+        -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%);
+        clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 92%); } }
+    @media only screen and (max-width: 45.3em) {
+      .additional-info__background {
+        -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%);
+        clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 93%); } }
+    @media only screen and (max-width: 30em) {
+      .additional-info__background {
+        -webkit-clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%);
+        clip-path: polygon(0 9.5%, 100% 5%, 100% 99%, 0 93%); } }
+  .additional-info__title {
+    width: 100%;
+    text-align: center;
+    margin: auto; }
+  .additional-info__list {
+    width: 100%;
+    padding: 1rem 5rem;
+    background-color: #403075;
+    display: flex;
+    flex-direction: column; }
+  .additional-info__list-item {
+    background-color: #13073A;
+    padding: 4rem 2rem;
+    margin-bottom: 5rem; }
+    .additional-info__list-item:first-child {
+      margin-top: 4rem; }
+  .additional-info__item-heading {
+    font-size: 3rem;
+    background-color: #e2e2e2;
+    color: #403075; }
