@@ -15,43 +15,85 @@ body {
 
 .heading-secondary {
   color: $color-primary-text;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
   letter-spacing: 5px;
-  //text-shadow: 2px 2px 5px $color-black;
-  //color: rgba(0,0,0,0.6);
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                  0px -5px 35px rgba(255,255,255,0.3);
 
   @media only screen and (max-width: $bp-medium) {
     display: block;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2rem;
+  }
 }
 
 .heading-tertiary {
   font-size: 2.1rem;
   font-weight: 700;
+  color: $color-primary-text;
   text-transform: uppercase;
   margin-bottom: 2rem;
-
-  &--cases {
-    margin-left: 4rem;
-    color: $color-grey-dark;
-
-    @media only screen and (max-width: $bp-large) {
-      letter-spacing: 10px;
-      text-align: center;
-      margin-left: 0;
-      width: 100%;
-    }
-  }
 
   @media only screen and (max-width: $bp-smaller) {
     font-size: 1.6rem;
     margin-bottom: 1rem;
+  }
+
+  &__cases {
+    width: 95%;
+    margin: 0 auto 1rem auto;
+    color: $color-primary;
+    background-color: $color-grey-light;
+    border-radius: 2rem;
     text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+      letter-spacing: 10px;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-bottom: 2rem;
+    }
+
+    &--fraud {
+      width: 60%;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 95%;
+      }
+    }
+
+    &--rcf {
+      @media only screen and (max-width: $bp-large) {
+        letter-spacing: 7px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        letter-spacing: 3px;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &--inquiries {
+      width: 60%;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 95%;
+      }
+    }
   }
 }
 

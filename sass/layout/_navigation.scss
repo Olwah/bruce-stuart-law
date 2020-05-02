@@ -190,7 +190,10 @@
 
       @media only screen and (min-width: $bp-largest) {
         font-size: 2.5rem;
-        color: $color-black;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.3rem;
       }
 
       @media only screen and (max-width: $bp-medium) {
@@ -217,7 +220,10 @@
 
       @media only screen and (min-width: $bp-largest) {
         font-size: 2.5rem;
-        color: $color-black;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.3rem;
       }
 
       @media only screen and (max-width: $bp-medium) {
@@ -234,7 +240,7 @@
     &:active {
       transform: scale(1.1);
       text-shadow: 2px 1px 1px rgba(0,0,0,.2);
-      color: $color-black;
+      color: $color-primary-dark;
     }
   }
 

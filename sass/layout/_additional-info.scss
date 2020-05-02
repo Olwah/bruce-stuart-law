@@ -1,0 +1,122 @@
+.additional-info {
+  margin-top: 5rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 0;
+  }
+
+  &__background {
+    height: auto;
+    background-color: $color-primary-light;
+
+    &--top {
+      padding: 5rem 0 1rem 0;
+      -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+
+      @media only screen and (max-width: $bp-larger) {
+        -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%);
+        clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
+      }
+    }
+
+    &--bottom {
+      padding: 6rem 0;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+    }
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+    &--p {
+      font-size: 1.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+    padding: 1rem 5rem;
+    //background-color: $color-primary;
+    background: linear-gradient($color-primary-light, $color-primary);
+    color: $color-black;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__list-item {
+    background-color: $color-primary-dark;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    &:first-child {
+      margin-top: 4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &__item-heading {
+
+  }
+
+  &__item-content {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    background-color: $color-grey-light;
+    transition: max-height 0.4s ease-out;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__item-text {
+    margin: 1.5rem 0;
+  }
+
+  &__bullet-list {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 2rem;
+  }
+
+  &__bullet__item {
+
+  }
+
+  & a:link,
+  a:visited {
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &__fees-table {
+    text-align: left;
+    margin-bottom: 2rem;
+    border-spacing: 1rem;
+
+    & th:first-child, td:first-child {
+      width: 70%;
+    }
+  }
+}

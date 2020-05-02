@@ -6,8 +6,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
 
     <title>Bruce Stuart Law</title>
   </head>
@@ -18,15 +18,16 @@
         <div class="navigation">
           <nav class="navigation__nav">
             <div class="navigation__logo">
-              <a href="#">
-                <img src="img/logo.png" alt="Bruce Stuart Law">
+              <a href="../index.html">
+                <img src="../img/logo.png" alt="Bruce Stuart Law">
               </a>
             </div>
             <!-- DESKTOP NAVIGATION -->
             <div class="navigation__desktop">
               <ul class="navigation__list">
-                <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">About Bruce</a></li>
                 <li class="navigation__item"><a href="#cases" class="navigation__link">Noteworthy Cases</a></li>
+                <li class="navigation__item"><a href="#additional-info" class="navigation__link">More Information</a></li>
                 <li class="navigation__item btn btn--primary"><a href="#contact" class="navigation__btn">Contact</a></li>
               </ul>
             </div>
@@ -39,6 +40,7 @@
               <ul class="navigation__list--mobile">
                 <li class="navigation__item--mobile"><a href="#about" class="navigation__link--mobile">About</a></li>
                 <li class="navigation__item--mobile"><a href="#cases" class="navigation__link--mobile">Noteworthy Cases</a></li>
+                <li class="navigation__item--mobile"><a href="#additional-info" class="navigation__link--mobile">More Information</a></li>
                 <li class="navigation__item--mobile"><a href="#contact" class="navigation__link--mobile">Contact</a></li>
               </ul>
             </div>
@@ -51,19 +53,22 @@
       <!-- DOWN ARROW SECTION BREAK-->
       <div class="section-break">
         <div class="section-break__right">
-        <a href="#about"><img class="section-break--animated" src="img/expand-button.png" alt="Scroll Down"></a>
+        <a href="#about"><img class="section-break--animated" src="../img/expand-button.png" alt="Scroll Down"></a>
         </div>
       </div>
       <!-- ABOUT SECTION-->
       <section id="about" class="about">
+        <div class="section__background section__background--top">
+          <h2 class="heading-secondary">&nbsp;</h2>
+        </div>
         <div class="about__background">
-          <div class="row">
+          <div class="row about__content">
             <div class="col-1-of-3">
               <div class="about__small">
                 <div class="about__shape">
-                  <img class="about__image" src="img/bruce-small.jpg" alt="Bruce Stuart">
+                  <img class="about__image" src="../img/bruce-small.jpg" alt="Bruce Stuart">
                 </div>
-                <h2 class="heading-secondary">Bruce Ian Stuart</h2>
+                <h2 class="heading-secondary about__heading">Bruce Ian Stuart</h2>
               </div>
             </div>
             <div class="col-2-of-3">
@@ -89,26 +94,31 @@
                 <ul class="about__list">
                   <li class="about__list-item">Money Laundering</li>
                   <li class="about__list-item">Corporate Fraud</li>
-                  <!--<li class="about__list-item">Money Laundering</li>-->
                   <li class="about__list-item">VAT Tax Tribunals</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        <div class="section__background section__background--bottom"></div>
       </section>
       <!-- DOWN ARROW SECTION BREAK-->
       <div class="section-break">
         <div class="section-break__left">
-        <a href="#cases"><img class="section-break--animated" src="img/expand-button.png" alt="Scroll Down"></a>
+        <a href="#cases"><img class="section-break--animated" src="../img/expand-button.png" alt="Scroll Down"></a>
         </div>
       </div>
       <!-- NOTEWORTHY CASES SECTION -->
       <section id="cases" class="cases">
+        <div class="section__background section__background--top">
+          <div class="section__title heading-secondary">
+            <h2>Noteworthy Cases</h2>
+            <p class="section__title--p">Please see below for a list of cases Bruce has worked on</p>
+          </div>
+        </div>
         <div class="cases__background">
-          <h2 class="cases__title heading-secondary u-margin-bottom-small">Noteworthy Cases</h2>
           <div class="cases__category cases__category--fraud">
-            <h3 class="heading-tertiary heading-tertiary--cases">Fraud</h3>
+            <h3 class="heading-tertiary heading-tertiary__cases heading-tertiary__cases--fraud">Fraud</h3>
             <ul class="cases__list">
               <li class="cases__list-item">
                 R. v. Hall.(2017) Largest copycat website fraud prosecuted by Trading Standards. 3 Month trial, leading Junior counsel.
@@ -160,8 +170,8 @@
               </li>
             </ul>
           </div>
-          <div class="cases__category cases__category--money-laundering">
-            <h3 class="heading-tertiary heading-tertiary--cases">Money Laundering</h3>
+          <div class="cases__category cases__category--money-laundering cases__category--money-laundering--new">
+            <h3 class="heading-tertiary heading-tertiary__cases heading-tertiary__cases--money-laundering">Money Laundering</h3>
             <ul class="cases__list">
               <li class="cases__list-item">
                 R.v. Hall 2(2018) – 8 week money laundering, leading junior counsel.
@@ -183,8 +193,8 @@
               </li>
             </ul>
           </div>
-          <div class="cases__category cases__category--rcf">
-            <h3 class="heading-tertiary heading-tertiary--cases">Restraint / Confiscation / Forefiture</h3>
+          <div class="cases__category cases__category--rcf cases__category--rcf--new">
+            <h3 class="heading-tertiary heading-tertiary__cases heading-tertiary__cases--rcf">Restraint / Confiscation / Forefiture</h3>
             <ul class="cases__list cases__list--rcf">
               <li class="cases__list-item">
                 R.v. CH (2017-19) – confiscation with alleged hidden assets of over 30m. Listed for a 4 week hearing I April 2019. Leading junior counsel.
@@ -198,7 +208,7 @@
             </ul>
           </div>
           <div class="cases__category cases__category--inquiries">
-            <h3 class="heading-tertiary heading-tertiary--cases">Inquiries</h3>
+            <h3 class="heading-tertiary heading-tertiary__cases heading-tertiary__cases--inquiries">Inquiries</h3>
             <ul class="cases__list">
               <li class="cases__list-item">
                 Shipman Inquiry.(2002) Represented Police Authority Investigating Officer who had conducted the first investigation into Shipman.
@@ -206,30 +216,200 @@
             </ul>
           </div>
         </div>
+      <div class="section__background section__background--bottom"></div>
       </section>
       <!-- DOWN ARROW SECTION BREAK-->
       <div class="section-break">
         <div class="section-break__left">
-        <a href="#contact"><img class="section-break--animated" src="img/expand-button.png" alt="Scroll Down"></a>
+        <a href="#contact"><img class="section-break--animated" src="../img/expand-button.png" alt="Scroll Down"></a>
+        </div>
+      </div>
+      <!-- ADDITIONAL INFORMATION SECTION-->
+      <section id="additional-info" class="additional-info">
+        <div class="section__background section__background--top">
+          <div class="section__title heading-secondary">
+            <h2>About Us</h2>
+            <p class="section__title--p">Please expand the sections below for more information</p>
+          </div>
+        </div>
+        <div class="additional-info__list">
+          <div class="additional-info__list-item">
+            <button type="button" class="btn__collapsible btn__collapsible--additional-info">General Information
+            </button>
+            <div class="additional-info__item-content">
+              <p class="additional-info__item-text">
+                Bruce Stuart practises in criminal, (including road traffic offences) and regulatory law. He advises and represent clients:
+              </p>
+              <p class="additional-info__item-text">
+                <ul class="additional-info__bullet-list">
+                  <li class="additional-info__bullet-item">Facing criminal charges in the Magistrates’ or Crown Courts. He also acts for clients in the High Court, Court of Appeal and Supreme Court. He is authorised to conduct litigation in Direct Access cases.
+                  Contact Us </li>
+                </ul>
+              </p>
+              <p class="additional-info__item-text">
+                <b>Contact Us</b><br>The following are invited to contact Bruce Stuart for a quote on his services (or e-mail <a href="mailto:bs@brucestuart.law">bs@brucestuart.law</a>):
+                <ul class="additional-info__bullet-list">
+                  <li class="additional-info__bullet-item">Solicitors or other practising lawyers;</li>
+                  <li class="additional-info__bullet-item">Licensed Access clients, who may either hold a licence issued by the Bar Standards Board, or be a member of a professional body which has been recognised by the Bar Standards Board; and </li>
+                  <li class="additional-info__bullet-item">Members of the public who wish to instruct a barrister under the Public Access scheme.</li>
+                </ul>
+              </p>
+              <p class="additional-info__item-text">
+                I will provide you with a quote as soon as possible. I always aim to set out quotes clearly, but if you receive your quote and there is something you do not understand, please <a href="../index.html#contact">contact me</a>.
+              </p>
+            </div>
+          </div>
+          <div class="additional-info__list-item">
+            <button type="button" class="btn__collapsible btn__collapsible--additional-info">Regulatory and Complaints Information
+            </button>
+            <div class="additional-info__item-content">
+              <p class="additional-info__item-text">
+                Barristers in chambers are regulated by the Bar Standards Board. You can search the Barristers’ Register on the Bar Standards Board’s <a href="https://www.barstandardsboard.org.uk/for-the-public/search-a-barristers-record/the-barristersregister.html">website</a>. This shows (1) whether a barrister has a current practising certificate, and (2) whether a barrister has any disciplinary findings, which are published on the Bar Standards Board’s website in accordance with their policy. Alternatively, you can contact the Bar Standards Board on 020 7611 1444 to ask about this (or e-mail <a href="mailto: ContactUs@BarStandardsBoard.org.uk">ContactUs@BarStandardsBoard.org.uk</a>).
+              </p>
+              <p class="additional-info__item-text">
+                A separate sheet is enclosed which provides information about:
+                <ul class="additional-info__bullet-list">
+                  <li class="additional-info__bullet-item">Our complaints procedure;</li>
+                  <li class="additional-info__bullet-item">Any right you may have to complain to the Legal Ombudsman (LeO) – the independent body which can help you if you have complained to your lawyer and are not happy with their response;</li>
+                  <li class="additional-info__bullet-item">How to complain to LeO; and</li>
+                  <li class="additional-info__bullet-item">Any time limits for making a complaint.</li>
+                </ul>
+              </p>
+              <p class="additional-info__item-text">
+                You can also search the decision data on LeO’s <a href="http://www.legalombudsman.org.uk/raising-standards/data-and-decisions/#ombudsman-decision-data">website</a>.
+              </p>
+              <p class="additional-info__item-text">
+                This shows providers which received an ombudsman’s decision in the previous 12 months, and whether LeO required the provider to give the consumer a remedy. Alternatively, you can contact LeO on <b>0300 555 0333</b> to ask about this (or e-mail <a href"mailto:enquiries@legalombudsman.org.uk">enquiries@legalombudsman.org.uk</a>).
+              </p>
+            </div>
+          </div>
+          <div class="additional-info__list-item">
+            <button type="button" class="btn__collapsible btn__collapsible--additional-info">Public Access
+            </button>
+            <div class="additional-info__item-content">
+              <p class="additional-info__item-text">
+                If you are a member of the public, the Bar Standards Board’s Public Access Guidance for Lay Clients is enclosed. This will help you to understand how the Public Access scheme works, and explains how you can use it to instruct barristers directly.
+              </p>
+            </div>
+          </div>
+          <div class="additional-info__list-item">
+            <button type="button" class="btn__collapsible btn__collapsible--additional-info">Public Access – Motoring Offences (Summary Only)
+            </button>
+            <div class="additional-info__item-content">
+              <p class="additional-info__item-text">
+                Bruce Stuart can advise and represent you in court if you are charged with a ‘summary only’ motoring offence. This is a motoring offence which can only be heard in the Magistrates’ Court; for example, driving while disqualified, driving without insurance, careless driving, failing to stop or report, and speeding.
+              </p>
+            </div>
+          </div>
+          <div class="additional-info__list-item">
+            <button type="button" class="btn__collapsible btn__collapsible--additional-info">Timescales
+            </button>
+            <div class="additional-info__item-content">
+              <p class="additional-info__item-text">
+                Timescales for my services may vary depending on factors such as my availability, the complexity of your case and the need for additional documents, the other side’s approach and court waiting times. As a guide, written advice on your case will be available within two to four weeks where possible. You may also need representation at short notice. If so, please contact me and I will aim to represent you at the hearing where possible.
+              </p>
+            </div>
+          </div>
+          <div class="additional-info__list-item">
+            <button type="button" class="btn__collapsible btn__collapsible--additional-info">Fees
+            </button>
+            <div class="additional-info__item-content">
+              <p class="additional-info__item-text">
+                I most often charge hourly rates for private criminal and regulatory work (where the client is not eligible for or does not wish to apply for legal aid). I most often charge fixed fees for road traffic work and appearances in court.
+              </p>
+              <p class="additional-info__item-text">
+                I also accept instructions under conditional fee agreements (“no win, no fee” agreements) in certain circumstances. For information, please contact me at <a href="bs@brucestuart.law">bs@brucestuart.law</a>).
+              </p>
+              <p class="additional-info__item-text">
+                I may charge fixed fees, which means that I will charge you a set amount of money for the work. Below we provide estimates based on the ranges of fixed fees for me in Ladyplace Chambers. All fees exclude VAT (where applicable).
+              </p>
+              <p class="additional-info__item-text">
+                If we charge fixed fees, these may vary depending on your needs – for example, your fees may be towards the higher end of the range if you have a complex case. If you have a particularly complex case, your fees may also be higher than the estimates below. There are also likely to be additional costs for travel disbursements.
+              </p>
+              <table class="additional-info__fees-table">
+                <thead>
+                  <tr>
+                    <th>Stage of case</th>
+                    <th>Ranges of fixed fees (estimates)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Preparation of case, including meetings with you and assistance with drafting of court documents.
+                    </td>
+                    <td>£150-£350 per hour.</td>
+                  </tr>
+                  <tr>
+                    <td>Travel to meetings court etc.</td>
+                    <td>£40 per hour.</td>
+                  </tr>
+                  <tr>
+                    <td>Written advice on your case</td>
+                    <td>£300-£5000.</td>
+                  </tr>
+                  <tr>
+                    <td>Guilty pleas</td>
+                    <td>£750 -£5000.</td>
+                  </tr>
+                  <tr>
+                    <td>First appearance (pre-trial court appearance)</td>
+                    <td>£750 -£3000.</td>
+                  </tr>
+                  <tr>
+                    <td>First day of trial</td>
+                    <td>£1500-£4000.</td>
+                  </tr>
+                  <tr>
+                    <td>Court appearances per day, or part day after the first day of trial</td>
+                    <td>£1000-£4000.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="additional-info__item-text">
+                <b>Contact Us</b><br>
+                All information is correct as of 1 January 2020, but fees are estimates only. For a quotation please contact me at <a href="mailto:bs@brucestuart.law">bs@brucestuart.law</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section__background section__background--bottom"></div>
+      </section>
+      <!-- DOWN ARROW SECTION BREAK-->
+      <div class="section-break">
+        <div class="section-break__left">
+        <a href="#contact"><img class="section-break--animated" src="../img/expand-button.png" alt="Scroll Down"></a>
         </div>
       </div>
       <!-- CONTACT SECTION -->
       <section id="contact" class="contact">
+        <div class="section__background section__background--top">
+          <div class="additional-info__title heading-secondary">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
         <div class="contact__background">
           <div class="contact__content">
-            <a href="#contact"><h2 class="contact__title heading-secondary">Contact</h2></a>
             <div class="row">
               <div class="col-1-of-3">
                 <div class="contact__options contact__options--left contact__text">
-                  <img src="img/SVG/phone.svg" alt="Phone" class="contact__image">
+                  <img src="../img/SVG/phone.svg" alt="Phone" class="contact__image">
                   <!-- <h3>Phone</h3> -->
-                  <p class="contact__text--mobile contact__text--mobile-phone">020 7097 5886</p>
+                  <div class="contact__text--desktop">
+                    <p class="contact__text--desktop-email">020 7097 5886</p>
+                  </div>
+                  <div class="contact__text--mobile contact__text--mobile-phone">
+                    <p class="contact__text--mobile-phone">020 7097 5886</p>
+                  </div>
                 </div>
               </div>
               <div class="col-1-of-3">
                 <div class="contact__options contact__options--middle contact__text">
-                  <img src="img/SVG/envelop.svg" alt="Email" class="contact__image">
+                  <img src="../img/SVG/envelop.svg" alt="Email" class="contact__image">
                   <!-- <h3>Email</h3> -->
+                  <div class="contact__text--desktop">
+                    <p class="contact__text--desktop-email"><a href="mailto:bs@brucestuart.law" class="contact__links">bs@brucestuart.law</a></p>
+                    <p class="contact__text--desktop-email"><a href="mailto:bs@seriousfrauddefence.com" class="contact__links">bs@seriousfrauddefence.com</a></p>
+                  </div>
                   <div class="contact__text--mobile">
                     <p class="contact__text--mobile-email"><a href="mailto:bs@brucestuart.law" class="contact__links">bs@brucestuart.law</a></p>
                     <p class="contact__text--mobile-email"><a href="mailto:bs@seriousfrauddefence.com" class="contact__links">bs@seriousfrauddefence.com</a></p>
@@ -238,15 +418,16 @@
               </div>
               <div class="col-1-of-3">
                 <div class="contact__options contact__options--right contact__text">
-                  <img src="img/SVG/office.svg" alt="Address" class="contact__image">
+                  <img src="../img/SVG/office.svg" alt="Address" class="contact__image">
                   <!-- <h3>Address</h3> -->
                   <p class="contact__text--desktop">Ladyplace Chambers,<br> Kemp House, 152-160 City Road, London, EC1V 2NX,<br> and in Surrey.</p>
-                  <p class="contact__text--mobile-address">Ladyplace Chambers<br> Kemp House<br> 152-160 City Road<br> London<br> EC1V 2NX<br> and in Surrey.</p>
+                  <p class="contact__text--mobile-address">Ladyplace Chambers<br>Kemp House<br>152-160 City Road<br>London<br>EC1V 2NX<br>and in Surrey.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="section__background section__background--bottom"></div>
       </section>
       <!-- FOOTER -->
       <footer class="footer">
@@ -255,15 +436,31 @@
             <h2>Bruce Stuart Law</h2>
             <div class="footer__navigation">
               <ul class="footer__list">
-                <li class="footer__list-item"><a href="#about" class="">About </a></li>
-                <li class="footer__list-item"><a href="#cases" class="">Noteworthy Cases</a></li>
-                <li class="footer__list-item"><a href="#contact" class="">Contact</a></li>
-                <li class="footer__list-item"><a href="/webpages/additional-info.html" class="">Additional Information</a></li>
+                <li class="footer__list-item"><a href="#about">About Bruce</a></li>
+                <li class="footer__list-item"><a href="#cases">Noteworthy Cases</a></li>
+                <li class="footer__list-item"><a href="#additional-info">Additional Information</a></li>
+                <li class="footer__list-item"><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
         </div>
       </footer>
     </div>
+    <script>
+      var coll = document.getElementsByClassName("btn__collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active-btn");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+      }
+    </script>
   </body>
 </html>

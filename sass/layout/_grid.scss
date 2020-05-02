@@ -15,12 +15,8 @@
   }
 
   @media only screen and (max-width: $bp-medium) {
-    max-width: 70rem;
-    padding: 0 3rem;
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    padding: 0 1rem;
+    width: 100%;
+    padding: 2rem 4rem;
   }
 
   @include clearfix;

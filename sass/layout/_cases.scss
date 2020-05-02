@@ -1,84 +1,26 @@
 .cases {
-  margin: 5rem 0;
+  margin-top: 5rem;
 
   @media only screen and (max-width: $bp-smallest) {
     margin: 0;
   }
 
   &__background {
-    position: relative;
-    background-color: $color-primary-light;
-    padding: 6rem 3rem 8rem 3rem;
-    -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
-    clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
-
+    width: 100%;
+    padding: 1rem 5rem;
+    background: linear-gradient($color-primary-light, $color-primary);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    @media only screen and (max-width: $bp-larger) {
-      padding: 6rem 3rem 10rem 3rem;
-    }
-
-    @media only screen and (max-width: $bp-large) {
-      padding: 9rem 3rem 13rem 3rem;
-    }
-
     @media only screen and (max-width: $bp-medium) {
-      -webkit-clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%);
-      clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%);
+      padding: 1rem 2rem;
     }
-
-    @media only screen and (max-width: $bp-small) {
-      -webkit-clip-path: polygon(0 0%, 100% 2.3%, 100% 100%, 0 97%);
-      clip-path: polygon(0 0%, 100% 2.3%, 100% 100%, 0 97%);
-    }
-
-    @media only screen and (max-width: $bp-smaller) {
-      -webkit-clip-path: polygon(0 0%, 100% 3.5%, 100% 100%, 0 97%);
-      clip-path: polygon(0 0%, 100% 3.5%, 100% 100%, 0 97%);
-      padding: 4rem 1rem 8rem 1rem;
-    }
-  }
-
-  &__title {
-    position: absolute;
-    left: 4rem;
-    top: 4rem;
-    transform: rotate(4deg);
-
-    @media only screen and (min-width: $bp-largest) {
-      transform: rotate(3deg);
-    }
-
-    @media only screen and (max-width: $bp-large) {
-      top: 4rem;
-      transform: rotate(7deg);
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      transform: rotate(5deg);
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      transform: rotate(7deg);
-      margin: 2rem 0;
-    }
-
-    @media only screen and (max-width: $bp-smaller) {
-      transform: rotate(8deg);
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-      font-size: 2rem;
-      transform: rotate(10.5deg);
-    }
-
   }
 
   &__category {
     height: 34rem;
-    background-color: $color-primary;
+    background-color: $color-primary-dark;
     border-radius: 2rem;
     box-shadow: 3px 4px 1px rgba(0,0,0,.3);
     padding: 1.5rem;
@@ -86,9 +28,20 @@
     margin-bottom: 4rem;
     overflow: scroll;
 
+    @media only screen and (min-width: $bp-largest) {
+      height: 37rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+    }
+
     @media only screen and (max-width: $bp-smaller) {
-      //overflow: scroll;
       margin-right: 0;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1.5rem 2rem;
     }
 
     &::-webkit-scrollbar {
@@ -101,20 +54,7 @@
       order: 1;
       display: flex;
       flex-wrap: wrap;
-
-      @media only screen and (max-width: $bp-large) {
-        width: 80rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        width: 65rem;
-      }
-
-      @media only screen and (max-width: $bp-smaller) {
-        height: 55rem;
-      }
     }
-
 
     &--money-laundering {
       width: 49%;
@@ -123,19 +63,15 @@
       order: -1;
 
       @media only screen and (max-width: $bp-large) {
-        width: 80rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        width: 65rem;
+        width: 100%;
       }
 
       @media only screen and (max-width: $bp-small) {
         margin-top: 10rem;
       }
 
-      @media only screen and (max-width: $bp-smaller) {
-        height: 55rem;
+      &--new {
+        margin-top: 2rem;
       }
     }
 
@@ -146,20 +82,12 @@
       order: 0;
 
       @media only screen and (max-width: $bp-large) {
-        width: 80rem;
+        width: 100%;
         margin-top: 0;
       }
 
-      @media only screen and (max-width: $bp-medium) {
-        width: 65rem;
-      }
-
-      @media only screen and (max-width: $bp-smaller) {
-        height: 36rem;
-      }
-
-      @media only screen and (max-width: $bp-smallest) {
-        height: 44rem;
+      &--new {
+        margin-top: 2rem;
       }
     }
 
@@ -167,14 +95,6 @@
       width: 100%;
       height: auto;
       order: 2;
-
-      @media only screen and (max-width: $bp-large) {
-        width: 80rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        width: 65rem;
-      }
     }
   }
 
@@ -211,6 +131,13 @@
       text-align: justify;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+      background-color: $color-primary-2;
+      color: $color-grey-light;
+      border-radius: .5rem;
+      margin-bottom: 1rem;
+    }
+
     &:hover {
       background-color: $color-primary-2;
       color: $color-grey-light;
@@ -221,8 +148,8 @@
 
     &:nth-of-type(2n) {
       @media only screen and (max-width: $bp-smallest) {
-        background-color: $color-grey-dark;
-        color: $color-white;
+        background-color: $color-grey;
+        color: $color-primary;
         border-radius: .5rem;
       }
     }
@@ -250,11 +177,6 @@
       mask-size: cover;
       background-image: none;
     }
-
-  //&__list-item:before +
-  //&__list-item:hover {
-  //  background-color: $color-primary-2;
-  //}
 
     @media only screen and (max-width: $bp-smallest) {
       display: none;

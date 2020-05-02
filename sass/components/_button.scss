@@ -43,7 +43,6 @@
       text-shadow: 1px 1px 1px rgba(0,0,0,.2);
     }
 
-
     &:hover {
       font-weight: bold;
       border: 3px solid $color-primary-2;
@@ -55,4 +54,62 @@
       background-color: $color-primary;
     }
   }
+
+  // Styles for collapsible buttons across the site
+
+  &__collapsible {
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+
+    // Button style for additional information list
+
+    &--additional-info {
+      width: 100%;
+      line-height: 1;
+      padding: 1rem;
+      font-size: 3rem;
+      background-color: $color-grey-light;
+      color: $color-primary;
+      border: none;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &::after {
+      content: '\02795'; /* Unicode character for "plus" sign (+) */
+      font-size: 2rem;
+      color: $color-primary;
+      float: right;
+      padding: .5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.active-btn:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: $color-white;
+  }
+
+.btn__collapsible:hover:after {
+  color: $color-white;
+}
+
+.btn__collapsible:hover, .active-btn {
+  background-color: $color-primary-2;
+  color: $color-grey-light;
 }
