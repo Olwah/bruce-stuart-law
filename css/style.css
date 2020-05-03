@@ -697,7 +697,7 @@ body {
         .contact__text--mobile-phone {
           font-size: 3rem;
           font-weight: bold;
-          color: #b7b7b7 !important; } }
+          color: #b7b7b7; } }
       @media only screen and (max-width: 35.6em) {
         .contact__text--mobile-email {
           text-align: center; } }
@@ -721,6 +721,10 @@ body {
   @media only screen and (max-width: 35.6em) {
     .contact {
       font-size: 1.5rem; } }
+
+#phone-link {
+  color: #b7b7b7;
+  text-decoration: none; }
 
 .footer {
   position: relative;

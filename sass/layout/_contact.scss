@@ -140,7 +140,7 @@
         @media only screen and (max-width: $bp-medium) {
           font-size: 3rem;
           font-weight: bold;
-          color: $color-grey !important;
+          color: $color-grey;
         }
       }
 
@@ -183,4 +183,9 @@
   @media only screen and (max-width: $bp-smaller) {
     font-size: 1.5rem;
   }
+}
+
+#phone-link {
+  color: $color-grey;
+  text-decoration: none;
 }
