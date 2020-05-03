@@ -84,10 +84,6 @@
   &__list {
     font-size: 1.5rem;
     list-style: none;
-
-    @media only screen and (max-width: $bp-smallest) {
-      //padding-left: 12rem;
-    }
   }
 
   &__list-item {

@@ -84,12 +84,6 @@
       @media only screen and (max-width: $bp-smaller) {
         font-size: 1.5rem;
       }
-
-      @media only screen and (max-width: $bp-smallest) {
-      //  display: flex;
-      //  align-items: center;
-      //  justify-content: space-between;
-      }
     }
 
     &::after {
