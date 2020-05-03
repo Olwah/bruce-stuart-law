@@ -4,6 +4,10 @@
     float: right;
     padding-right: 6rem;
     margin-top: -5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: -7rem;
+    }
   }
 
   &__left {
@@ -13,7 +17,7 @@
 
     @media only screen and (max-width: $bp-smallest) {
       float: none;
-      margin-top: 0;
+      margin-top: -2rem;
     }
 
     &--additional-info-below {

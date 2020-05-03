@@ -248,6 +248,9 @@ body {
   float: right;
   padding-right: 6rem;
   margin-top: -5rem; }
+  @media only screen and (max-width: 30em) {
+    .section-break__right {
+      margin-top: -7rem; } }
 
 .section-break__left {
   float: left;
@@ -256,7 +259,7 @@ body {
   @media only screen and (max-width: 30em) {
     .section-break__left {
       float: none;
-      margin-top: 0; } }
+      margin-top: -2rem; } }
   .section-break__left--additional-info-below {
     margin-top: -2rem; }
 
