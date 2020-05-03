@@ -6,17 +6,20 @@
     max-width: 170rem;
   }
 
+  @media only screen and (max-width: $bp-medium) {
+    //max-width: 80%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    //max-width: 30rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
 
     @media only screen and (max-width: $bp-medium) {
       margin-bottom: $gutter-vertical-small;
     }
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    width: 100%;
-    padding: 2rem 4rem;
   }
 
   @include clearfix;

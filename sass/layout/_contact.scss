@@ -54,6 +54,10 @@
       }
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 85%;
+    }
+
     &:hover {
       color: $color-grey-light;
       background-color: $color-primary-2;
@@ -143,6 +147,10 @@
       &-email {
         @media only screen and (max-width: $bp-smaller) {
           text-align: center;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 1.8rem;
         }
       }
 

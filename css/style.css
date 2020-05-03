@@ -74,6 +74,9 @@ body {
   @media only screen and (max-width: 45.3em) {
     .heading-secondary {
       font-size: 2rem; } }
+  @media only screen and (max-width: 30em) {
+    .heading-secondary {
+      font-size: 1.4rem; } }
 
 .heading-tertiary {
   font-size: 2.1rem;
@@ -205,7 +208,10 @@ body {
     font-size: 3rem;
     background-color: #e2e2e2;
     color: #403075;
-    border: none; }
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
       .btn__collapsible--additional-info {
         font-size: 2rem; } }
@@ -278,7 +284,7 @@ body {
     border-bottom: 0.5rem solid #e2e2e2; }
     @media only screen and (max-width: 75em) {
       .section__background--top {
-        -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 84%);
+        -webkit-clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%);
         clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0 100%); } }
   .section__background--bottom {
     background-color: #403075;
@@ -300,6 +306,10 @@ body {
     @media only screen and (max-width: 35.6em) {
       .section__title--p {
         letter-spacing: 2px; } }
+    @media only screen and (max-width: 30em) {
+      .section__title--p {
+        letter-spacing: 1px;
+        font-size: .9rem; } }
 
 .about {
   margin-top: 8rem; }
@@ -316,6 +326,9 @@ body {
     background: linear-gradient(#887CAF, #403075); }
   .about__content {
     padding: 4rem 2rem; }
+    @media only screen and (max-width: 30em) {
+      .about__content {
+        padding: 2rem 1rem; } }
   .about__small {
     position: relative;
     text-align: center;
@@ -358,9 +371,6 @@ body {
   .about__list {
     font-size: 1.5rem;
     list-style: none; }
-    @media only screen and (max-width: 30em) {
-      .about__list {
-        padding-left: 12rem; } }
   .about__list-item {
     width: 33%;
     float: left; }
@@ -627,6 +637,9 @@ body {
         padding-left: 1rem; }
         .contact__options:hover {
           background-color: #887CAF; } }
+    @media only screen and (max-width: 30em) {
+      .contact__options {
+        max-width: 85%; } }
     .contact__options:hover {
       color: #e2e2e2;
       background-color: #615192;
@@ -688,6 +701,9 @@ body {
       @media only screen and (max-width: 35.6em) {
         .contact__text--mobile-email {
           text-align: center; } }
+      @media only screen and (max-width: 30em) {
+        .contact__text--mobile-email {
+          font-size: 1.8rem; } }
       .contact__text--mobile-address {
         display: none; }
         @media only screen and (max-width: 56.25em) {
@@ -746,7 +762,8 @@ body {
         padding: 1rem 1rem; } }
     @media only screen and (max-width: 30em) {
       .footer__list-item {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        padding-bottom: 0; } }
   .footer a:link,
   .footer a:visited {
     color: #000;
@@ -763,10 +780,6 @@ body {
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .row {
-      width: 100%;
-      padding: 2rem 4rem; } }
   .row::after {
     content: "";
     display: table;

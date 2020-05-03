@@ -19,6 +19,10 @@
 
   &__content {
     padding: 4rem 2rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 2rem 1rem;
+    }
   }
 
   &__small {
@@ -82,7 +86,7 @@
     list-style: none;
 
     @media only screen and (max-width: $bp-smallest) {
-      padding-left: 12rem;
+      //padding-left: 12rem;
     }
   }
 
